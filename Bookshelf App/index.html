@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>My Bookshelf</h1>
+    </header>
+    <main>
+        <section class="input-form">
+            <h2>Add New Book</h2>
+            <form id="bookForm">
+                <div>
+                    <label for="title">Title</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div>
+                    <label for="author">Author</label>
+                    <input type="text" id="author" required>
+                </div>
+                <div>
+                    <label for="year">Year</label>
+                    <input type="number" id="year" required>
+                </div>
+                <div>
+                    <label for="isComplete">Finished Reading</label>
+                    <input type="checkbox" id="isComplete">
+                </div>
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+        <section class="search-form">
+            <h2>Search Book</h2>
+            <input type="text" id="searchInput" placeholder="Search by title...">
+        </section>
+        <section id="bookShelf">
+            <div class="book-rack" id="unfinishedBookList">
+                <h2>Unfinished Books</h2>
+                <div class="books"></div>
+            </div>
+            <div class="book-rack" id="finishedBookList">
+                <h2>Finished Books</h2>
+                <div class="books"></div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/storage.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
