@@ -1,46 +1,36 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
-    background-color: #eeeeee;
+    padding: 0;
 }
 
-h1 {
+header {
+    background-color: #4CAF50;
+    color: white;
     text-align: center;
+    padding: 1em;
 }
 
-form, .bookshelf {
-    margin: 20px auto;
-    max-width: 600px;
-    padding: 10px;
-    background-color: white;
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 1em;
+}
+
+.bookshelf {
     border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 1em;
+    margin-top: 1em;
 }
 
-form input, form button {
-    display: block;
-    width: 100%;
-    margin: 5px 0;
-    padding: 10px;
-}
-
-.book-list {
-    margin: 10px 0;
-}
-
-.book-item {
-    background-color: #b16868;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+[data-bookid] {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin-bottom: 1em;
 }
 
 button {
-    cursor: pointer;
-}
-
-.book-item button {
-    margin-right: 5px;
+    margin-right: 0.5em;
 }
