@@ -1,4 +1,4 @@
-**Bookshelf App Project **
+**Bookshelf App Project** 
 
 there are several **attributes** on each element: 
 
