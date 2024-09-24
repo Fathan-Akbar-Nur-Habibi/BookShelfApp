@@ -44,24 +44,24 @@ function createBookElement(book) {
 
     const authorElement = document.createElement('p');
     authorElement.setAttribute('data-testid', 'bookItemAuthor');
-    authorElement.textContent = `Penulis: ${book.author}`;
+    authorElement.textContent = `Author: ${book.author}`;
     bookElement.appendChild(authorElement);
 
     const yearElement = document.createElement('p');
     yearElement.setAttribute('data-testid', 'bookItemYear');
-    yearElement.textContent = `Tahun: ${book.year}`;
+    yearElement.textContent = `Year: ${book.year}`;
     bookElement.appendChild(yearElement);
 
     const buttonContainer = document.createElement('div');
     const toggleButton = document.createElement('button');
     toggleButton.setAttribute('data-testid', 'bookItemIsCompleteButton');
-    toggleButton.textContent = book.isComplete ? 'Belum selesai dibaca' : 'Selesai dibaca';
+    toggleButton.textContent = book.isComplete ? 'Unfinished reading' : 'finished reading';
     toggleButton.addEventListener('click', () => toggleBookComplete(book.id));
     buttonContainer.appendChild(toggleButton);
 
     const deleteButton = document.createElement('button');
     deleteButton.setAttribute('data-testid', 'bookItemDeleteButton');
-    deleteButton.textContent = 'Hapus';
+    deleteButton.textContent = 'Delete';
     deleteButton.addEventListener('click', () => deleteBook(book.id));
     buttonContainer.appendChild(deleteButton);
 
