@@ -1,3 +1,5 @@
+index html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,29 +14,31 @@
     </header>
     <main>
         <section id="inputSection">
-            <h2>Tambah Buku</h2>
+            <h2>Add Books</h2>
             <form id="bookForm">
-                <input type="text" id="title" placeholder="Judul Buku" required>
-                <input type="text" id="author" placeholder="Penulis Buku" required>
-                <input type="number" id="year" placeholder="Tahun Rilis" required>
+                <input type="text" id="title" placeholder="Book Title" required>
+                <input type="text" id="author" placeholder="Book Author" required>
+                <input type="number" id="year" placeholder="Year of Release" required>
                 <label>
                     <input type="checkbox" id="isComplete">
-                    Selesai dibaca
+                    finished reading
                 </label>
-                <button type="submit">Tambah Buku</button>
+                <button type="submit">Add Book</button>
             </form>
         </section>
         <section id="searchSection">
-            <h2>Cari Buku</h2>
-            <input type="text" id="searchInput" placeholder="Cari judul buku...">
+            <h2>Search Books</h2>
+            <input type="text" id="searchInput" placeholder="Search for book titles...">
         </section>
         <section id="booksSection">
-            <h2>Belum Selesai Dibaca</h2>
+            <h2>Unfinished Reading</h2>
             <div id="incompleteBookshelfList" class="bookshelf"></div>
-            <h2>Selesai Dibaca</h2>
+            <h2>Completed Reading</h2>
             <div id="completeBookshelfList" class="bookshelf"></div>
         </section>
     </main>
     <script src="scripts.js"></script>
 </body>
 </html>
+
+
